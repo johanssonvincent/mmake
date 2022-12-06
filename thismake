@@ -1,0 +1,17 @@
+ABC.test: A.test B.test C.test
+	touch ABC.test
+
+A.test: a.test SHARED.test
+	touch A.test
+
+C.test: c.test SHARED.test
+	touch C.test
+
+D.test: d.test SHARED.test
+	touch D.test
+
+B.test: b.test D.test
+	touch B.test
+
+SHARED.test: shared.test
+	touch SHARED.test

@@ -1,0 +1,2 @@
+A.test: A.test
+	touch A.test
